@@ -10,15 +10,30 @@ jQuery(document).ready(function ($) {
     htmlbody = $('html,body');
 
 
+    // slide.waypoint(function (event, direction) {
+
+    //     dataslide = $(this).attr('data-slide');
+
+    //     if (direction === 'down') {
+    //         $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+    //     }
+    //     else {
+    //         $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+    //     }
+
+    // });
+
     slide.waypoint(function (event, direction) {
 
         dataslide = $(this).attr('data-slide');
+        var a = "-1";
+        var dataslides= parseInt(a, 10) + parseInt(dataslide, 10);
 
         if (direction === 'down') {
             $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
         }
         else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+            $('.navigation li[data-slide="' + dataslides + '"]').addClass('active').next().removeClass('active');
         }
 
     });
@@ -32,11 +47,16 @@ jQuery(document).ready(function ($) {
 
     function goToByScroll(dataslide) {
         htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
+            scrollTop: parseInt("1", 10) + parseInt($('.slide[data-slide="' + dataslide + '"]').offset().top, 10)
         }, 2000, 'easeInOutQuint');
+
     }
 
-
+   // function goToByScroll(dataslide) {
+   //      htmlbody.animate({
+   //          scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
+   //      }, 2000, 'easeInOutQuint');
+   //  }
 
     links.click(function (e) {
         e.preventDefault();
