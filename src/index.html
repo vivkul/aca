@@ -17,11 +17,20 @@
 
 <body>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>                  
+
 	<div class="menu">
 		<div class="container clearfix">
 
 			<div id="logo" class="grid_2">
-				<img src="images/aca1.jpg">
+				<img src="images/aca1.jpg" height="65" width="220">
 			</div>
 
 			<div id="nav" class="grid_10 omega">
@@ -29,7 +38,7 @@
 					<li data-slide="1">About Us</li>
 					<li data-slide="2">Activities</li>
 					<li data-slide="3">Best Faculty Award</li>
-					<li data-slide="4">League</li>
+					<li data-slide="4">LOP</li>
                     <li data-slide="5">Downloads</li>
                     <li data-slide="6">Team</li>
 				</ul>
@@ -53,7 +62,7 @@
                     <li>To promote student-student and student-teacher interaction.</li>
                 </ul>
 				<p>Don't forget to follow us!</p>
-				<p><a href="https://www.facebook.com/aca.cse.iitk" target="_blank"><img src="images/facebookIcon.png" style="height:2em"></a></p>
+				<div class="fb-like" data-href="https://www.facebook.com/aca.cse.iitk" data-width="200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 			</div>
 			<div id="decorative" class="grid_5 omega">
 				<!--<img src="images/decorative.png">-->
@@ -62,6 +71,9 @@
 
                 <h3>Happenings @ ACA </h3> 
                 <p>ACA organizes deparmental activities right from fresher's to farewell interspersed with programming lectures and competitions.</p>
+
+                <h3>ESC101 Programming Gym </h3>
+                <p>Shape your programming skills at <a href="http://www2.cse.iitk.ac.in:81/newonj/index.php" target="_blank"> ONJ </a></p>
 			</div>
         </div>
 		</div>
@@ -80,16 +92,16 @@
                 <h3>Past Events</h3>
                 <div class="grid_6 content">
                 <ul>
-                    <li><a href="https://www.facebook.com/events/532354710163071/"><font color="white"> League of Programmers Lecture Series (5-13 Oct)</font></a></li>
-                    <li><a href="http://www.cse.iitk.ac.in/users/aca/Hacku/"><font color="white"> Yahoo! HackU</font></a></li>
+                    <li><a href="https://www.facebook.com/events/532354710163071/"> League of Programmers Lecture Series (5-13 Oct)</a></li>
+                    <li><a href="http://www.cse.iitk.ac.in/users/aca/Hacku/"> Yahoo! HackU</a></li>
                     <li>Freshers to Y13 batch of CSE</li>
-                    <li><a href="http://www.cse.iitk.ac.in/users/aca/sumschool2013/index.html"> <font color="white">ACA summer school </font></a></li>
+                    <li><a href="http://www.cse.iitk.ac.in/users/aca/sumschool2013/index.html"> ACA summer school </a></li>
                     <li>Farewell to passing out batch of 2013. Also conducted the voting for Best Faculty.</li>
                     <li>Microsoft Appathon</li>
                     <li>Semester Projects given to CSE students of first year (batch Y12)</li>
-                    <li> <a href="http://www.cse.iitk.ac.in/users/aca/lop.html"><font color="white">ACM-ICPC Training Camp</font></a> (21-28th October)</li>
+                    <li> <a href="http://www.cse.iitk.ac.in/users/aca/lop.html">ACM-ICPC Training Camp</a> (21-28th October)</li>
                     <li>Freshers to Y12 batch of CSE</li>
-                    <li><a href="http://www.cse.iitk.ac.in/users/aca/Hacku/"><font color="white">Yahoo! HackU </font></a> from 23 Aug to 26 Aug</li>
+                    <li><a href="http://www.cse.iitk.ac.in/users/aca/Hacku/">Yahoo! HackU </a> from 23 Aug to 26 Aug</li>
                     <li> ACA summer school</li>
                     <li> Farewell to passing out batch of 2012 </li>
                     <li> Cycling trip in a beautiful and serene environment upto "Shoban Mandir", approx. 19km from campus. </li>
@@ -101,7 +113,7 @@
                 <ul>
                     <li>A discussion and training camp for programming competitions like ACM-ICPC etc.</li>
                     <li>Freshers to the incoming Y11 batch of CSE.</li>
-                    <li><a href="http://developer.yahoo.com/blogs/ydn/posts/2011/09/laddoos-peacocks-and-hacks-from-kanpur/" target="_blank"><font color="white">Yahoo! HackU</font></a> organised from 18th to 21st August.</li>
+                    <li><a href="http://developer.yahoo.com/blogs/ydn/posts/2011/09/laddoos-peacocks-and-hacks-from-kanpur/" target="_blank">Yahoo! HackU</a> organised from 18th to 21st August.</li>
                     <li>Summer workshop on Data strucutres, python and web proramming in Summer 2011.<br></li>
                     <li>A 24-hr app-deployement event "Code-A-Thon" was organised in April 2011.<br></li>
                     <li>We had Departmental Trip to Rishikesh in March 2011.<br/> </li>
@@ -212,7 +224,20 @@
                 <li><a href="http://www.cse.iitk.ac.in/users/aca/newsletter2003_4.pdf">2003 Departmental Magazine(pdf)</a></li>
                 <li><a href="http://www.cse.iitk.ac.in/users/aca/Apping4Dummies1.pdf">Apping(pdf)</a></li>
                 <li><a href="http://www.cse.iitk.ac.in/users/aca/gradschooltalk.pdf">Applying to Ph.D programs(pdf)</a></li>
-                </ul> 
+                </ul>
+                <br>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <br> 
+
                 </div>
             </div>
         </div>
@@ -227,9 +252,9 @@
             <a href="http://www.cse.iitk.ac.in/users/karkare/" target="_blank"><font color="black">Prof. Amey Karkare</font></a><br/><br/>
             <h3>Coordinators</h3> 
                 <table>
-                    <tr><td>Ayush Mittal</td>       <td style="padding-left:20px;">Ph: 8765696161</td></tr>
-                    <tr><td>Harshvardhan Sharma</td>    <td style="padding-left:20px;">Ph: 8171880676</td></tr>
-                    <tr><td>Priyanka Harlalka</td>      <td style="padding-left:20px;">Ph: 8765696268</td></tr>
+                    <tr><td><a href="https://www.facebook.com/ayush.mittal.73" target="_blank"><font color="black">Ayush Mittal</font></a></td>       <td style="padding-left:20px;">Ph: 8765696161</td></tr>
+                    <tr><td><a href="https://www.facebook.com/harsh1618" target="_blank"><font color="black">Harshvardhan Sharma</font></a></td>    <td style="padding-left:20px;">Ph: 8171880676</td></tr>
+                    <tr><td><a href="https://www.facebook.com/priyanka.harlalka" target="_blank"><font color="black">Priyanka Harlalka</font></a></td>      <td style="padding-left:20px;">Ph: 8765696268</td></tr>
                             </table>
                         <br>
                         
@@ -245,25 +270,42 @@
             <div class="grid_5 content">
                 <h3>Ex-Coordinators</h3> 
                 <ul>
-                    <li>Pankaj Prateek </li>
-                    <li>Shubham Modi </li> 
-                    <li>Pankaj Jindal</li>
-                    <li>Shubhdeep Kochhar</li>
-                    <li>Shahbaz Khan</li> 
-                    <li>Shekhar Kadyan</li>
-                    <li>Vineet Hingorani</li>
-                    <li>Adarsh J</li>
-                    <li>Pritesh Agarwal</li>
+                    <li><a href="https://www.facebook.com/pankaj.prateek" target="_blank"><font color="black">Pankaj Prateek </font></a></li>
+                    <li><a href="https://www.facebook.com/shubham.modi.12" target="_blank"><font color="black">Shubham Modi </font></a></li> 
+                    <li><a href="https://www.facebook.com/pnkjjindal" target="_blank"><font color="black">Pankaj Jindal </font></a></li>
+                    <li><a href="https://www.facebook.com/shubhdeepk" target="_blank"><font color="black">Shubhdeep Kochhar </font></a></li>
+                    <li><a href="https://www.facebook.com/SBZK.ShahbazKhan" target="_blank"><font color="black">Shahbaz Khan </font></a></li> 
+                    <li><a href="https://www.facebook.com/shekhar.kadyan" target="_blank"><font color="black">Shekhar Kadyan </font></a></li>
+                    <li><a href="https://www.facebook.com/hvineet" target="_blank"><font color="black">Vineet Hingorani </font></a></li>
+                    <li><a href="https://www.facebook.com/adarshaj" target="_blank"><font color="black">Adarsh J </font></a></li>
+                    <li><a href="https://www.facebook.com/pritesh.cse" target="_blank"><font color="black">Pritesh Agarwal </font></a></li>
                 </ul> 
+                <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>  
             </div>
         </div>
 
         </div>
     </div>
-    <div>
-        <br>
-        <br>
+    <div style="text-align:right">
+        <font >Copyright 2014 - ACA | <a href="http://www.cse.iitk.ac.in/" target="_blank"><font color="#4c4cff">CSE Department</font></a> | <a href="http://www.iitk.ac.in/" target="_blank"><font color="#4c4cff">IIT Kanpur </font></a></font>
     </div>
+
 	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>

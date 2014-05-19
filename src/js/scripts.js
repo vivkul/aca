@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
     function goToByScroll(dataslide) {
         htmlbody.animate({
             scrollTop: parseInt("1", 10) + parseInt($('.slide[data-slide="' + dataslide + '"]').offset().top, 10)
-        }, 2000, 'easeInOutQuint');
+        }, 1000, 'easeInOutQuint');
 
     }
 
